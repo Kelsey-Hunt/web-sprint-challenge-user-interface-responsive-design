@@ -52,8 +52,7 @@ table {
 }
 
 html {
-    max-width: 1920px;
-    min-width: 428px;
+    max-width: 100%;
     width: 100%;
     font-size: 62.5%;
 }
@@ -103,7 +102,7 @@ header div {
     padding: 1%;
 }
 
-nav {
+header nav {
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -162,8 +161,8 @@ nav a {
 .gallery img{
     width: 50vh;
     height: 35vh;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 /* about us section */
@@ -253,6 +252,7 @@ footer {
 }
 
 .footer-items {
+    max-width: 100%;
     display: flex;
 }
 
@@ -292,7 +292,7 @@ form {
 }
 
 .footer-items nav{
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -326,21 +326,39 @@ form {
     /* gallery section */
     .gallery {
         height: auto;
+        width: 100%;
+       
+    }
+
+    .gallery h2 {
+        padding-top: 2%;
+    }
+
+    .gallery img{
+        width: 100%;
+        height: auto;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .food-pics {
+        width: 100%;
     }
     
     /* about us section */
 
     .about {
-        height: 200vh;
+        height: 220vh;
     }
     
     .about h2 {
         width: 100%;
         padding-top: 5vh;
+        padding-bottom: 20%;
     }
     
     .about-container .text {
-        width: 85%;
+        width: 75%;
     }
     
     /* contact us section */
@@ -364,19 +382,56 @@ form {
     .contacts {
         width: 100%;
         padding-bottom: 2.5vh;
-        border: 2px solid red;
     }
-
-    .contact-container {
-        border: 2px solid red;
-    }
-
 
     /* footer section */
     footer {
-        
+       
 
     }
+
+    .footer-items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 8%;
+    }
+
+    footer nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .email-signup {
+        width: 90%;
+        padding: 0;
+    }
+
+    .form-items {
+        padding: 0;
+        padding-bottom: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    .copyright {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copyright p {
+        width: 75%;
+        text-align: center;
+    }
+
+   
 
    
 
