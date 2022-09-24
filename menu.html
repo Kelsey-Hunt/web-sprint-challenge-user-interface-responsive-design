@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sprint Challenge - Menu</title>
-
+    <link rel="stylesheet" href="css/menu.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
 </head>
@@ -14,15 +14,27 @@
 <body>
     <div>
         <!-- header -->
-        <header>
-            BLOOMTECH BAR AND GRILL
 
-            <!-- nav -->
-            Menu
-            Reservations
-            Special Offers
-            Contact
-        </header>
+        <header>
+			<div>
+				<h1 id="menu">BLOOMTECH BAR AND GRILL</h1>
+
+				<!-- nav -->
+				<nav>
+					<a href="#menu">Menu</a>
+					<a href="#">Reservations</a>
+					<a href="#">Special Offers</a>
+					<a href="#">Contact</a>
+				</nav>
+
+				<div class="social">
+					<i class="fa-brands fa-facebook"></i>
+					<i class="fa-brands fa-square-twitter"></i>
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+
+			</div>
+		</header>
 
         <!-- spacer -->
         <div class="spacer"></div>
@@ -118,17 +130,35 @@
 
         <!-- footer -->
         <footer>
-            <!-- email signup -->
-            Join our mailing list!
-            Sign Up
-            <!-- nav -->
-            Menu
-            Reservations
-            Special Offers
-            Contact
-            <!-- copyright -->
-            ©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.
-        </footer>
+			<div class="footer-items">
+				<!-- email signup -->
+			
+				<div class="email-signup">
+					<form action="email-signup">
+						<div class="email-title">
+							<p>Join our mailing list!</p>
+						</div>
+							<div class="form-items">
+								<input type="email" placeholder="Email Address" required>
+								<button type="submit">Sign Up</button>
+							</div>
+					</form>
+				</div>
+				
+				<!-- nav -->
+				<nav>
+					<a href="/menu.html">Menu</a>
+					<a href="#">Reservations</a>
+					<a href="#">Special Offers</a>
+					<a href="#">Contact</a>	
+				</nav>
+			</div>
+			
+			<!-- copyright -->
+			<div class="copyright">
+				<p>©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.</p>
+			</div>
+		</footer>
     </div>
 </body>
 
