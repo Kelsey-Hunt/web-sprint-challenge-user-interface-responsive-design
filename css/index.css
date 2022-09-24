@@ -338,10 +338,15 @@ form {
     /* header section */
     h1 {
         text-align: center;
-        font-size: 4.5rem;
+        line-height: 1;
         padding: 10%;
         padding-top: 5%;
-        padding-bottom: 4%;
+        padding-bottom: 3%;
+    }
+
+    .header-title {
+        font-size: 4rem;
+
     }
 
     header nav {
@@ -349,6 +354,10 @@ form {
         justify-content: center;
         align-items: center;
         padding-bottom: 2%;
+    }
+
+    .links {
+        flex-direction: column;
     }
     /* gallery section */
     .gallery {
@@ -380,8 +389,8 @@ form {
     
     .about h2 {
         width: 100%;
-        padding-top: 5vh;
-        padding-bottom: 20%;
+        padding-top: 14vh;
+        padding-bottom: 40%;
     }
     
     .about-container .text {
